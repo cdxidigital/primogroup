@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "buildCommand": "npm run build",
+  "framework": "vite",
+  "outputDirectory": "dist",
+  "installCommand": "npm install",
+  "env": {
+    "NODE_ENV": "production",
+    "VITE_API_URL": "@primo_pools_api_url",
+    "DATABASE_URL": "@primo_pools_database_url"
+  },
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/server/index.ts"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ],
+  "regions": ["syd1"],
+  "projectSettings": {
+    "buildCommand": "npm run build",
+    "outputDirectory": "dist"
+  }
+}
