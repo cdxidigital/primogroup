@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Primo Pools - Premium Luxury Pool Construction Website",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
